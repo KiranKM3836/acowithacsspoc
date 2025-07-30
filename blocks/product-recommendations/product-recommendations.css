@@ -1,0 +1,156 @@
+.product-recommendations {
+    overflow: hidden;
+    min-height: 512px;
+    margin-top: 30px;
+}
+
+.product-recommendations .scrollable {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+}
+
+.product-recommendations .product-grid {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin: 0;
+}
+
+.product-recommendations .product-grid-item img {
+    width: 100%;
+}
+
+.product-recommendations .product-grid .product-grid-item a {
+    text-decoration: none;
+}
+
+.product-recommendations .product-grid .product-grid-item a span {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: .5rem 1rem 0 0;
+    display: inline-block;
+}
+
+.product-recommendations .product-grid picture {
+    background: none;
+    display: block;
+    width: 300px;
+    aspect-ratio: 1 / 1.25;
+}
+
+.product-recommendations .product-grid img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    object-fit: contain;
+    background: none;
+}
+
+.product-recommendations .product-grid .placeholder {
+    background-color: var(--color-neutral-500);
+    scroll-snap-align: start;
+}
+
+.product-recommendations .product-grid .placeholder img {
+    display: none;
+}
+
+.product-recommendations .product-grid-item {
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+@media (width >=900px) {
+    .product-recommendations {
+        min-height: 534px;
+    }
+}
+
+.product-details-container {
+    /* Wrapper padding & heading styling */
+.product-recommendations-wrapper {
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+}
+
+.product-recommendations h2 {
+  font-size: 1.75rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Scrollable container */
+.product-recommendations .scrollable {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+/* Product grid */
+.product-recommendations .product-grid {
+  display: flex;
+  gap: 1.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual card */
+.product-recommendations .product-grid-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 220px;
+  min-width: 220px;
+  flex: 0 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  scroll-snap-align: start;
+  transition: box-shadow 0.2s ease;
+}
+
+.product-recommendations .product-grid-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.product-recommendations .product-grid-item picture {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.product-recommendations .product-grid-item img {
+  border-radius: 8px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Product name */
+.product-recommendations .product-grid-item a span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+/* Add to Cart button */
+.product-recommendations .product-grid-cta .dropin-button {
+  width: 100%;
+  border-radius: 24px;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.product-recommendations .product-grid-cta .dropin-button:hover {
+  background-color: #111827;
+}
+.product-recommendations .product-grid picture {
+    width: 100%;
+}
+}
